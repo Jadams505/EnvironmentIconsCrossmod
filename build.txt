@@ -1,0 +1,5 @@
+displayName = Environment Icons Crossmod Addon
+author = Jadams
+version = 0.1
+modReferences = EnvironmentIcons
+weakReferences = CalamityMod
