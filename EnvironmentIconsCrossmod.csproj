@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<!-- Import tModLoader mod properties -->
 	<Import Project="..\tModLoader.targets" />
@@ -10,6 +10,9 @@
 	<ItemGroup>
 	  <Reference Include="CalamityMod">
 	    <HintPath>..\ModAssemblies\CalamityMod_v2.2.1.dll</HintPath>
+	  </Reference>
+	  <Reference Include="CalValEX">
+	    <HintPath>..\ModAssemblies\CalValEX_v11.4.1.dll</HintPath>
 	  </Reference>
 	  <Reference Include="EnvironmentIcons">
 	    <HintPath>..\ModAssemblies\EnvironmentIcons_v0.1.dll</HintPath>
