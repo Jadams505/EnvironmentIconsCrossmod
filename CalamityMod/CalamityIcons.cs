@@ -19,220 +19,480 @@ public static class CalamityInfo
 [JITWhenModsEnabled(CalamityInfo.ModName)]
 public class Abyss1_EnvironmentIcon : ModBiomeEnvironmentIcon
 {
-	protected override ModBiome Biome => ModContent.GetInstance<AbyssLayer1Biome>();
+	public const string BiomeName = "AbyssLayer1Biome";
+	protected override ModBiome Biome => ModContent.Find<ModBiome>(CalamityInfo.ModName, BiomeName);
 
-	public override Condition Applies() => new Condition($"{CalamityInfo.ConditionPath}.Abyss1",
+	public override Condition Applies() => new Condition($"{CalamityInfo.ConditionPath}.{BiomeName}",
 		IsBiomeActive);
 
-	public override bool IsLoadingEnabled(Mod mod) => CalamityInfo.Enabled;
+	public override bool IsLoadingEnabled(Mod mod)
+	{
+		if (!CalamityInfo.Enabled)
+			return false;
+
+		if (!ModContent.TryFind<ModBiome>(CalamityInfo.ModName, BiomeName, out _))
+		{
+			EnvironmentIconsCrossmod.LogMissingBiome(CalamityInfo.ModName, BiomeName, nameof(Abyss1_EnvironmentIcon));
+			return false;
+		}
+
+		return true;
+	}
 }
 
 [JITWhenModsEnabled(CalamityInfo.ModName)]
 public class Abyss2_EnvironmentIcon : ModBiomeEnvironmentIcon
 {
-	protected override ModBiome Biome => ModContent.GetInstance<AbyssLayer2Biome>();
+	public const string BiomeName = "AbyssLayer2Biome";
+	protected override ModBiome Biome => ModContent.Find<ModBiome>(CalamityInfo.ModName, BiomeName);
 
-	public override Condition Applies() => new Condition($"{CalamityInfo.ConditionPath}.Abyss2",
+	public override Condition Applies() => new Condition($"{CalamityInfo.ConditionPath}.{BiomeName}",
 		IsBiomeActive);
 
-	public override bool IsLoadingEnabled(Mod mod) => CalamityInfo.Enabled;
+	public override bool IsLoadingEnabled(Mod mod)
+	{
+		if (!CalamityInfo.Enabled)
+			return false;
+
+		if (!ModContent.TryFind<ModBiome>(CalamityInfo.ModName, BiomeName, out _))
+		{
+			EnvironmentIconsCrossmod.LogMissingBiome(CalamityInfo.ModName, BiomeName, nameof(Abyss2_EnvironmentIcon));
+			return false;
+		}
+
+		return true;
+	}
 }
 
 [JITWhenModsEnabled(CalamityInfo.ModName)]
 public class Abyss3_EnvironmentIcon : ModBiomeEnvironmentIcon
 {
-	protected override ModBiome Biome => ModContent.GetInstance<AbyssLayer3Biome>();
+	public const string BiomeName = "AbyssLayer3Biome";
+	protected override ModBiome Biome => ModContent.Find<ModBiome>(CalamityInfo.ModName, BiomeName);
 
-	public override Condition Applies() => new Condition($"{CalamityInfo.ConditionPath}.Abyss3",
+	public override Condition Applies() => new Condition($"{CalamityInfo.ConditionPath}.{BiomeName}",
 		IsBiomeActive);
 
-	public override bool IsLoadingEnabled(Mod mod) => CalamityInfo.Enabled;
+	public override bool IsLoadingEnabled(Mod mod)
+	{
+		if (!CalamityInfo.Enabled)
+			return false;
+
+		if (!ModContent.TryFind<ModBiome>(CalamityInfo.ModName, BiomeName, out _))
+		{
+			EnvironmentIconsCrossmod.LogMissingBiome(CalamityInfo.ModName, BiomeName, nameof(Abyss3_EnvironmentIcon));
+			return false;
+		}
+
+		return true;
+	}
 }
 
 [JITWhenModsEnabled(CalamityInfo.ModName)]
 public class Abyss4_EnvironmentIcon : ModBiomeEnvironmentIcon
 {
-	protected override ModBiome Biome => ModContent.GetInstance<AbyssLayer4Biome>();
+	public const string BiomeName = "AbyssLayer4Biome";
+	protected override ModBiome Biome => ModContent.Find<ModBiome>(CalamityInfo.ModName, BiomeName);
 
-	public override Condition Applies() => new Condition($"{CalamityInfo.ConditionPath}.Abyss4",
+	public override Condition Applies() => new Condition($"{CalamityInfo.ConditionPath}.{BiomeName}",
 		IsBiomeActive);
 
-	public override bool IsLoadingEnabled(Mod mod) => CalamityInfo.Enabled;
+	public override bool IsLoadingEnabled(Mod mod)
+	{
+		if (!CalamityInfo.Enabled)
+			return false;
+
+		if (!ModContent.TryFind<ModBiome>(CalamityInfo.ModName, BiomeName, out _))
+		{
+			EnvironmentIconsCrossmod.LogMissingBiome(CalamityInfo.ModName, BiomeName, nameof(Abyss4_EnvironmentIcon));
+			return false;
+		}
+
+		return true;
+	}
 }
 
 [JITWhenModsEnabled(CalamityInfo.ModName)]
 public class AcidRain_EnvironmentIcon : ModBiomeEnvironmentIcon
 {
-	protected override ModBiome Biome => ModContent.GetInstance<AcidRainBiome>();
+	public const string BiomeName = "AcidRainBiome";
+	protected override ModBiome Biome => ModContent.Find<ModBiome>(CalamityInfo.ModName, BiomeName);
 
 	// IsBiomeActive is not implemented in Calamity for acid rain
-	public override Condition Applies() => new Condition($"{CalamityInfo.ConditionPath}.AcidRain",
+	public override Condition Applies() => new Condition($"{CalamityInfo.ConditionPath}.{BiomeName}",
 		() => IsBiomeActive() || AcidRainEvent.AcidRainEventIsOngoing);
 
-	public override bool IsLoadingEnabled(Mod mod) => CalamityInfo.Enabled;
+	public override bool IsLoadingEnabled(Mod mod)
+	{
+		if (!CalamityInfo.Enabled)
+			return false;
+
+		if (!ModContent.TryFind<ModBiome>(CalamityInfo.ModName, BiomeName, out _))
+		{
+			EnvironmentIconsCrossmod.LogMissingBiome(CalamityInfo.ModName, BiomeName, nameof(AcidRain_EnvironmentIcon));
+			return false;
+		}
+
+		return true;
+	}
 }
 
 [JITWhenModsEnabled(CalamityInfo.ModName)]
 public class ArsenalLab_EnvironmentIcon : ModBiomeEnvironmentIcon
 {
-	protected override ModBiome Biome => ModContent.GetInstance<ArsenalLabBiome>();
+	public const string BiomeName = "ArsenalLabBiome";
+	protected override ModBiome Biome => ModContent.Find<ModBiome>(CalamityInfo.ModName, BiomeName);
 
-	public override Condition Applies() => new Condition($"{CalamityInfo.ConditionPath}.ArsenalLab",
+	public override Condition Applies() => new Condition($"{CalamityInfo.ConditionPath}.{BiomeName}",
 		IsBiomeActive);
 
-	public override bool IsLoadingEnabled(Mod mod) => CalamityInfo.Enabled;
+	public override bool IsLoadingEnabled(Mod mod)
+	{
+		if (!CalamityInfo.Enabled)
+			return false;
+
+		if (!ModContent.TryFind<ModBiome>(CalamityInfo.ModName, BiomeName, out _))
+		{
+			EnvironmentIconsCrossmod.LogMissingBiome(CalamityInfo.ModName, BiomeName, nameof(ArsenalLab_EnvironmentIcon));
+			return false;
+		}
+
+		return true;
+	}
 }
 
 [JITWhenModsEnabled(CalamityInfo.ModName)]
 public class AstralInfection_EnvironmentIcon : ModBiomeEnvironmentIcon
 {
-	protected override ModBiome Biome => ModContent.GetInstance<AstralInfectionBiome>();
+	public const string BiomeName = "AstralInfectionBiome";
+	protected override ModBiome Biome => ModContent.Find<ModBiome>(CalamityInfo.ModName, BiomeName);
 
-	public override Condition Applies() => new Condition($"{CalamityInfo.ConditionPath}.AstralInfection",
+	public override Condition Applies() => new Condition($"{CalamityInfo.ConditionPath}.{BiomeName}",
 		IsBiomeActive);
 
-	public override bool IsLoadingEnabled(Mod mod) => CalamityInfo.Enabled;
+	public override bool IsLoadingEnabled(Mod mod)
+	{
+		if (!CalamityInfo.Enabled)
+			return false;
+
+		if (!ModContent.TryFind<ModBiome>(CalamityInfo.ModName, BiomeName, out _))
+		{
+			EnvironmentIconsCrossmod.LogMissingBiome(CalamityInfo.ModName, BiomeName, nameof(AstralInfection_EnvironmentIcon));
+			return false;
+		}
+
+		return true;
+	}
 }
 
 [JITWhenModsEnabled(CalamityInfo.ModName)]
 public class AstralCaveDesert_EnvironmentIcon : ModBiomeEnvironmentIcon
 {
-	protected override ModBiome Biome => ModContent.GetInstance<AstralCaveDesert>();
+	public const string BiomeName = "AstralCaveDesert";
+	protected override ModBiome Biome => ModContent.Find<ModBiome>(CalamityInfo.ModName, BiomeName);
 
-	public override Condition Applies() => new Condition($"{CalamityInfo.ConditionPath}.AstralCaveDesert",
+	public override Condition Applies() => new Condition($"{CalamityInfo.ConditionPath}.{BiomeName}",
 		IsBiomeActive);
 
-	public override bool IsLoadingEnabled(Mod mod) => CalamityInfo.Enabled;
+	public override bool IsLoadingEnabled(Mod mod)
+	{
+		if (!CalamityInfo.Enabled)
+			return false;
+
+		if (!ModContent.TryFind<ModBiome>(CalamityInfo.ModName, BiomeName, out _))
+		{
+			EnvironmentIconsCrossmod.LogMissingBiome(CalamityInfo.ModName, BiomeName, nameof(AstralCaveDesert_EnvironmentIcon));
+			return false;
+		}
+
+		return true;
+	}
 }
 
 [JITWhenModsEnabled(CalamityInfo.ModName)]
 public class AstralDesert_EnvironmentIcon : ModBiomeEnvironmentIcon
 {
-	protected override ModBiome Biome => ModContent.GetInstance<AstralDesert>();
+	public const string BiomeName = "AstralDesert";
+	protected override ModBiome Biome => ModContent.Find<ModBiome>(CalamityInfo.ModName, BiomeName);
 
-	public override Condition Applies() => new Condition($"{CalamityInfo.ConditionPath}.AstralDesert",
+	public override Condition Applies() => new Condition($"{CalamityInfo.ConditionPath}.{BiomeName}",
 		IsBiomeActive);
 
-	public override bool IsLoadingEnabled(Mod mod) => CalamityInfo.Enabled;
+	public override bool IsLoadingEnabled(Mod mod)
+	{
+		if (!CalamityInfo.Enabled)
+			return false;
+
+		if (!ModContent.TryFind<ModBiome>(CalamityInfo.ModName, BiomeName, out _))
+		{
+			EnvironmentIconsCrossmod.LogMissingBiome(CalamityInfo.ModName, BiomeName, nameof(AstralDesert_EnvironmentIcon));
+			return false;
+		}
+
+		return true;
+	}
 }
 
 [JITWhenModsEnabled(CalamityInfo.ModName)]
 public class AstralIce_EnvironmentIcon : ModBiomeEnvironmentIcon
 {
-	protected override ModBiome Biome => ModContent.GetInstance<AstralIce>();
+	public const string BiomeName = "AstralIce";
+	protected override ModBiome Biome => ModContent.Find<ModBiome>(CalamityInfo.ModName, BiomeName);
 
-	public override Condition Applies() => new Condition($"{CalamityInfo.ConditionPath}.AstralIce",
+	public override Condition Applies() => new Condition($"{CalamityInfo.ConditionPath}.{BiomeName}",
 		IsBiomeActive);
 
-	public override bool IsLoadingEnabled(Mod mod) => CalamityInfo.Enabled;
+	public override bool IsLoadingEnabled(Mod mod)
+	{
+		if (!CalamityInfo.Enabled)
+			return false;
+
+		if (!ModContent.TryFind<ModBiome>(CalamityInfo.ModName, BiomeName, out _))
+		{
+			EnvironmentIconsCrossmod.LogMissingBiome(CalamityInfo.ModName, BiomeName, nameof(AstralIce_EnvironmentIcon));
+			return false;
+		}
+
+		return true;
+	}
 }
 
 [JITWhenModsEnabled(CalamityInfo.ModName)]
 public class AstralUnderground_EnvironmentIcon : ModBiomeEnvironmentIcon
 {
-	protected override ModBiome Biome => ModContent.GetInstance<AstralUnderground>();
+	public const string BiomeName = "AstralUnderground";
+	protected override ModBiome Biome => ModContent.Find<ModBiome>(CalamityInfo.ModName, BiomeName);
 
-	public override Condition Applies() => new Condition($"{CalamityInfo.ConditionPath}.AstralUnderground",
+	public override Condition Applies() => new Condition($"{CalamityInfo.ConditionPath}.{BiomeName}",
 		IsBiomeActive);
 
-	public override bool IsLoadingEnabled(Mod mod) => CalamityInfo.Enabled;
+	public override bool IsLoadingEnabled(Mod mod)
+	{
+		if (!CalamityInfo.Enabled)
+			return false;
+
+		if (!ModContent.TryFind<ModBiome>(CalamityInfo.ModName, BiomeName, out _))
+		{
+			EnvironmentIconsCrossmod.LogMissingBiome(CalamityInfo.ModName, BiomeName, nameof(AstralUnderground_EnvironmentIcon));
+			return false;
+		}
+
+		return true;
+	}
 }
- 
+
 [JITWhenModsEnabled(CalamityInfo.ModName)]
 public class BasaltGully_EnvironmentIcon : ModBiomeEnvironmentIcon
 {
-	protected override ModBiome Biome => ModContent.GetInstance<BasaltGullyBiome>();
+	public const string BiomeName = "BasaltGullyBiome";
+	protected override ModBiome Biome => ModContent.Find<ModBiome>(CalamityInfo.ModName, BiomeName);
 
-	public override Condition Applies() => new Condition($"{CalamityInfo.ConditionPath}.BasaltGullyBiome",
+	public override Condition Applies() => new Condition($"{CalamityInfo.ConditionPath}.{BiomeName}",
 		IsBiomeActive);
 
-	public override bool IsLoadingEnabled(Mod mod) => CalamityInfo.Enabled;
+	public override bool IsLoadingEnabled(Mod mod)
+	{
+		if (!CalamityInfo.Enabled)
+			return false;
+
+		if (!ModContent.TryFind<ModBiome>(CalamityInfo.ModName, BiomeName, out _))
+		{
+			EnvironmentIconsCrossmod.LogMissingBiome(CalamityInfo.ModName, BiomeName, nameof(BasaltGully_EnvironmentIcon));
+			return false;
+		}
+
+		return true;
+	}
 }
 
 [JITWhenModsEnabled(CalamityInfo.ModName)]
 public class BrimstoneCrag_EnvironmentIcon : ModBiomeEnvironmentIcon
 {
-	protected override ModBiome Biome => ModContent.GetInstance<BrimstoneCragsBiome>();
+	public const string BiomeName = "BrimstoneCragsBiome";
+	protected override ModBiome Biome => ModContent.Find<ModBiome>(CalamityInfo.ModName, BiomeName);
 
-	public override Condition Applies() => new Condition($"{CalamityInfo.ConditionPath}.BrimstoneCragsBiome",
+	public override Condition Applies() => new Condition($"{CalamityInfo.ConditionPath}.{BiomeName}",
 		IsBiomeActive);
 
-	public override bool IsLoadingEnabled(Mod mod) => CalamityInfo.Enabled;
+	public override bool IsLoadingEnabled(Mod mod)
+	{
+		if (!CalamityInfo.Enabled)
+			return false;
+
+		if (!ModContent.TryFind<ModBiome>(CalamityInfo.ModName, BiomeName, out _))
+		{
+			EnvironmentIconsCrossmod.LogMissingBiome(CalamityInfo.ModName, BiomeName, nameof(BrimstoneCrag_EnvironmentIcon));
+			return false;
+		}
+
+		return true;
+	}
 }
 
 [JITWhenModsEnabled(CalamityInfo.ModName)]
 public class ClamDen_EnvironmentIcon : ModBiomeEnvironmentIcon
 {
-	protected override ModBiome Biome => ModContent.GetInstance<ClamDenBiome>();
+	public const string BiomeName = "ClamDenBiome";
+	protected override ModBiome Biome => ModContent.Find<ModBiome>(CalamityInfo.ModName, BiomeName);
 
-	public override Condition Applies() => new Condition($"{CalamityInfo.ConditionPath}.ClamDenBiome",
+	public override Condition Applies() => new Condition($"{CalamityInfo.ConditionPath}.{BiomeName}",
 		IsBiomeActive);
 
-	public override bool IsLoadingEnabled(Mod mod) => CalamityInfo.Enabled;
+	public override bool IsLoadingEnabled(Mod mod)
+	{
+		if (!CalamityInfo.Enabled)
+			return false;
+
+		if (!ModContent.TryFind<ModBiome>(CalamityInfo.ModName, BiomeName, out _))
+		{
+			EnvironmentIconsCrossmod.LogMissingBiome(CalamityInfo.ModName, BiomeName, nameof(ClamDen_EnvironmentIcon));
+			return false;
+		}
+
+		return true;
+	}
 }
 
 [JITWhenModsEnabled(CalamityInfo.ModName)]
 public class GleamingBurrows_EnvironmentIcon : ModBiomeEnvironmentIcon
 {
-	protected override ModBiome Biome => ModContent.GetInstance<GleamingBurrowsBiome>();
+	public const string BiomeName = "GleamingBurrowsBiome";
+	protected override ModBiome Biome => ModContent.Find<ModBiome>(CalamityInfo.ModName, BiomeName);
 
-	public override Condition Applies() => new Condition($"{CalamityInfo.ConditionPath}.GleamingBurrowsBiome",
+	public override Condition Applies() => new Condition($"{CalamityInfo.ConditionPath}.{BiomeName}",
 		IsBiomeActive);
 
-	public override bool IsLoadingEnabled(Mod mod) => CalamityInfo.Enabled;
+	public override bool IsLoadingEnabled(Mod mod)
+	{
+		if (!CalamityInfo.Enabled)
+			return false;
+
+		if (!ModContent.TryFind<ModBiome>(CalamityInfo.ModName, BiomeName, out _))
+		{
+			EnvironmentIconsCrossmod.LogMissingBiome(CalamityInfo.ModName, BiomeName, nameof(GleamingBurrows_EnvironmentIcon));
+			return false;
+		}
+
+		return true;
+	}
 }
 
 [JITWhenModsEnabled(CalamityInfo.ModName)]
 public class PolypForest_EnvironmentIcon : ModBiomeEnvironmentIcon
 {
-	protected override ModBiome Biome => ModContent.GetInstance<PolypForestBiome>();
+	public const string BiomeName = "PolypForestBiome";
+	protected override ModBiome Biome => ModContent.Find<ModBiome>(CalamityInfo.ModName, BiomeName);
 
-	public override Condition Applies() => new Condition($"{CalamityInfo.ConditionPath}.PolypForestBiome",
+	public override Condition Applies() => new Condition($"{CalamityInfo.ConditionPath}.{BiomeName}",
 		IsBiomeActive);
 
-	public override bool IsLoadingEnabled(Mod mod) => CalamityInfo.Enabled;
+	public override bool IsLoadingEnabled(Mod mod)
+	{
+		if (!CalamityInfo.Enabled)
+			return false;
+
+		if (!ModContent.TryFind<ModBiome>(CalamityInfo.ModName, BiomeName, out _))
+		{
+			EnvironmentIconsCrossmod.LogMissingBiome(CalamityInfo.ModName, BiomeName, nameof(PolypForest_EnvironmentIcon));
+			return false;
+		}
+
+		return true;
+	}
 }
 
 [JITWhenModsEnabled(CalamityInfo.ModName)]
 public class RadiantReefs_EnvironmentIcon : ModBiomeEnvironmentIcon
 {
-	protected override ModBiome Biome => ModContent.GetInstance<RadiantReefsBiome>();
+	public const string BiomeName = "RadiantReefsBiome";
+	protected override ModBiome Biome => ModContent.Find<ModBiome>(CalamityInfo.ModName, BiomeName);
 
-	public override Condition Applies() => new Condition($"{CalamityInfo.ConditionPath}.RadiantReefsBiome",
+	public override Condition Applies() => new Condition($"{CalamityInfo.ConditionPath}.{BiomeName}",
 		IsBiomeActive);
 
-	public override bool IsLoadingEnabled(Mod mod) => CalamityInfo.Enabled;
+	public override bool IsLoadingEnabled(Mod mod)
+	{
+		if (!CalamityInfo.Enabled)
+			return false;
+
+		if (!ModContent.TryFind<ModBiome>(CalamityInfo.ModName, BiomeName, out _))
+		{
+			EnvironmentIconsCrossmod.LogMissingBiome(CalamityInfo.ModName, BiomeName, nameof(RadiantReefs_EnvironmentIcon));
+			return false;
+		}
+
+		return true;
+	}
 }
 
 [JITWhenModsEnabled(CalamityInfo.ModName)]
 public class SulphurousSea_EnvironmentIcon : ModBiomeEnvironmentIcon
 {
-	protected override ModBiome Biome => ModContent.GetInstance<SulphurousSeaBiome>();
+	public const string BiomeName = "SulphurousSeaBiome";
+	protected override ModBiome Biome => ModContent.Find<ModBiome>(CalamityInfo.ModName, BiomeName);
 
-	public override Condition Applies() => new Condition($"{CalamityInfo.ConditionPath}.SulphurousSeaBiome",
+	public override Condition Applies() => new Condition($"{CalamityInfo.ConditionPath}.{BiomeName}",
 		IsBiomeActive);
 
-	public override bool IsLoadingEnabled(Mod mod) => CalamityInfo.Enabled;
+	public override bool IsLoadingEnabled(Mod mod)
+	{
+		if (!CalamityInfo.Enabled)
+			return false;
+
+		if (!ModContent.TryFind<ModBiome>(CalamityInfo.ModName, BiomeName, out _))
+		{
+			EnvironmentIconsCrossmod.LogMissingBiome(CalamityInfo.ModName, BiomeName, nameof(SulphurousSea_EnvironmentIcon));
+			return false;
+		}
+
+		return true;
+	}
 }
 
 [JITWhenModsEnabled(CalamityInfo.ModName)]
 public class SunkenSea_EnvironmentIcon : ModBiomeEnvironmentIcon
 {
-	protected override ModBiome Biome => ModContent.GetInstance<SunkenSeaBiome>();
+	public const string BiomeName = "SunkenSeaBiome";
+	protected override ModBiome Biome => ModContent.Find<ModBiome>(CalamityInfo.ModName, BiomeName);
 
-	public override Condition Applies() => new Condition($"{CalamityInfo.ConditionPath}.SunkenSeaBiome",
+	public override Condition Applies() => new Condition($"{CalamityInfo.ConditionPath}.{BiomeName}",
 		IsBiomeActive);
 
-	public override bool IsLoadingEnabled(Mod mod) => CalamityInfo.Enabled;
+	public override bool IsLoadingEnabled(Mod mod)
+	{
+		if (!CalamityInfo.Enabled)
+			return false;
+
+		if (!ModContent.TryFind<ModBiome>(CalamityInfo.ModName, BiomeName, out _))
+		{
+			EnvironmentIconsCrossmod.LogMissingBiome(CalamityInfo.ModName, BiomeName, nameof(SunkenSea_EnvironmentIcon));
+			return false;
+		}
+
+		return true;
+	}
 }
 
 [JITWhenModsEnabled(CalamityInfo.ModName)]
 public class TimelessShores_EnvironmentIcon : ModBiomeEnvironmentIcon
 {
-	protected override ModBiome Biome => ModContent.GetInstance<TimelessShoresBiome>();
+	public const string BiomeName = "TimelessShoresBiome";
+	protected override ModBiome Biome => ModContent.Find<ModBiome>(CalamityInfo.ModName, BiomeName);
 
-	public override Condition Applies() => new Condition($"{CalamityInfo.ConditionPath}.TimelessShoresBiome",
+	public override Condition Applies() => new Condition($"{CalamityInfo.ConditionPath}.{BiomeName}",
 		IsBiomeActive);
 
-	public override bool IsLoadingEnabled(Mod mod) => CalamityInfo.Enabled;
+	public override bool IsLoadingEnabled(Mod mod)
+	{
+		if (!CalamityInfo.Enabled)
+			return false;
+
+		if (!ModContent.TryFind<ModBiome>(CalamityInfo.ModName, BiomeName, out _))
+		{
+			EnvironmentIconsCrossmod.LogMissingBiome(CalamityInfo.ModName, BiomeName, nameof(TimelessShores_EnvironmentIcon));
+			return false;
+		}
+
+		return true;
+	}
 }

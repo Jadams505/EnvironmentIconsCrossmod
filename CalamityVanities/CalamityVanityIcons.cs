@@ -1,5 +1,6 @@
 ﻿using CalValEX.Biomes;
 using EnvironmentIcons.API;
+using EnvironmentIconsCrossmod.Macrocosm;
 using Terraria;
 using Terraria.ModLoader;
 
@@ -17,10 +18,23 @@ public static class CalamityVanitiesInfo
 [JITWhenModsEnabled(CalamityVanitiesInfo.ModName)]
 public class AstralBlight_EnvironmentIcon : ModBiomeEnvironmentIcon
 {
-	protected override ModBiome Biome => ModContent.GetInstance<AstralBlight>();
+	public const string BiomeName = "AstralBlight";
+	protected override ModBiome Biome => ModContent.Find<ModBiome>(CalamityVanitiesInfo.ModName, BiomeName);
 
-	public override Condition Applies() => new Condition($"{CalamityVanitiesInfo.ConditionPath}.AstralBlight",
+	public override Condition Applies() => new Condition($"{CalamityVanitiesInfo.ConditionPath}.{BiomeName}",
 		IsBiomeActive);
 
-	public override bool IsLoadingEnabled(Mod mod) => CalamityVanitiesInfo.Enabled;
+	public override bool IsLoadingEnabled(Mod mod)
+	{
+		if (!CalamityVanitiesInfo.Enabled)
+			return false;
+
+		if (!ModContent.TryFind<ModBiome>(CalamityVanitiesInfo.ModName, BiomeName, out _))
+		{
+			EnvironmentIconsCrossmod.LogMissingBiome(CalamityVanitiesInfo.ModName, BiomeName, nameof(AstralBlight_EnvironmentIcon));
+			return false;
+		}
+
+		return true;
+	}
 }
