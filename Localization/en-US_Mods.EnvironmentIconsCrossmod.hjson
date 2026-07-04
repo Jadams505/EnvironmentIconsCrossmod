@@ -1,1 +1,26 @@
+Conditions: {
+	CalValEX.AstralBlight: In an Astral Blight biome
 
+	CalamityMod: {
+		Abyss1: In the 1st layer of the Abyss
+		Abyss2: In the 2nd layer of the Abyss
+		Abyss3: In the 3rd layer of the Abyss
+		Abyss4: In the 4th layer of the Abyss
+		AcidRain: During an Acid Rain event
+		ArsenalLab: In an Arsenal Lab structure
+		AstralInfection: In an Astral Infection biome
+		AstralCaveDesert: In an Underground Astral Desert biome
+		AstralDesert: In an Astral Desert biome
+		AstralIce: In an Astral Ice biome
+		AstralUnderground: In an Underground Astral biome
+		BasaltGullyBiome: In a Basalt Gully biome
+		BrimstoneCragsBiome: In a Brimstone Crag biome
+		ClamDenBiome: In a Clam Den biome
+		GleamingBurrowsBiome: In a Gleaming Burrows biome
+		PolypForestBiome: In a Polyp Forest biome
+		RadiantReefsBiome: In a Radiant Reefs biome
+		SulphurousSeaBiome: In a Sulphurous Sea biome
+		SunkenSeaBiome: In a Sunken Sea biome
+		TimelessShoresBiome: In a Timeless Shores biome
+	}
+}

@@ -15,7 +15,7 @@
 	    <HintPath>..\ModAssemblies\CalValEX_v11.4.1.dll</HintPath>
 	  </Reference>
 	  <Reference Include="EnvironmentIcons">
-	    <HintPath>..\ModAssemblies\EnvironmentIcons_v0.1.dll</HintPath>
+	    <HintPath>..\ModAssemblies\EnvironmentIcons_v1.0.0.dll</HintPath>
 	  </Reference>
 	</ItemGroup>
 

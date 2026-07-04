@@ -10,6 +10,8 @@ public static class CalamityVanitiesInfo
 	internal const string ModName = "CalValEX";
 	public static Mod Instance = null;
 	public static bool Enabled { get; } = ModLoader.TryGetMod(ModName, out Instance);
+
+	public const string ConditionPath = $"Mods.EnvironmentIconsCrossmod.Conditions.{ModName}";
 }
 
 [JITWhenModsEnabled(CalamityVanitiesInfo.ModName)]
@@ -17,7 +19,7 @@ public class AstralBlight_EnvironmentIcon : ModBiomeEnvironmentIcon
 {
 	protected override ModBiome Biome => ModContent.GetInstance<AstralBlight>();
 
-	public override Condition Applies() => new Condition("",
+	public override Condition Applies() => new Condition($"{CalamityVanitiesInfo.ConditionPath}.AstralBlight",
 		IsBiomeActive);
 
 	public override bool IsLoadingEnabled(Mod mod) => CalamityVanitiesInfo.Enabled;
