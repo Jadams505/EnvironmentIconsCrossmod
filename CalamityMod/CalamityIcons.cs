@@ -1,6 +1,4 @@
-﻿using CalamityMod.BiomeManagers;
-using CalamityMod.BiomeManagers.BestiaryCategories;
-using CalamityMod.Events;
+﻿using CalamityMod.Events;
 using EnvironmentIcons.API;
 using Terraria;
 using Terraria.ModLoader;

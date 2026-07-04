@@ -35,4 +35,10 @@ Conditions: {
 		PollutionBiome: In a Polluted area
 		UndergroundPollutionBiome: In a Polluted Underground area
 	}
+
+	ThoriumMod: {
+		DepthsBiome: In an Aquatic Depths biome
+		GraniteBiome: In a Thorium Granite biome
+		MarbleBiome: In a Thorium Marble biome
+	}
 }

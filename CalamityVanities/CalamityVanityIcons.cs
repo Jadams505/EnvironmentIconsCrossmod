@@ -1,6 +1,4 @@
-﻿using CalValEX.Biomes;
-using EnvironmentIcons.API;
-using EnvironmentIconsCrossmod.Macrocosm;
+﻿using EnvironmentIcons.API;
 using Terraria;
 using Terraria.ModLoader;
 
