@@ -23,4 +23,16 @@ Conditions: {
 		SunkenSeaBiome: In a Sunken Sea biome
 		TimelessShoresBiome: In a Timeless Shores biome
 	}
+
+	Macrocosm: {
+		BasaltBiome: In a Basalt biome
+		MoonBiome: In a Moon subworld
+		DemonSunBiome: During a Demon Sun event
+		EarthBiome: In a Earth subworld
+		IrradiationBiome: In an Irradiation biome
+		MoonNightBiome: In a Moon subworld at Night
+		MoonUndergroundBiome: In an Underground Moon biome
+		PollutionBiome: In a Polluted area
+		UndergroundPollutionBiome: In a Polluted Underground area
+	}
 }
