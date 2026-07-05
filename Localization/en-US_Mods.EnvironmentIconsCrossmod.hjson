@@ -54,6 +54,18 @@ Conditions: {
 		OtherworldBiome: In a Otherworld subworld
 		SeaOfStarsBiome: In a Sea of Stars subworld
 	}
+
+	Redemption: {
+		BlazingBastionBiome: In a Blazing Bastion structure
+		FowlMorningBiome: During a Fowl Morning event
+		LabBiome: In an Abandoned Laboratory structure
+		SoullessBiome: In a Soulless Caverns biome
+		WastelandCorruptionBiome: In a Corrupted Wasteland biome
+		WastelandCrimsonBiome: In a Crimon Wasteland biome
+		WastelandDesertBiome: In a Desert Wasteland biome
+		WastelandPurityBiome: In a Wasteland biome
+		WastelandSnowBiome: In a Snow Wasteland biome
+	}
 }
 
 DisplayNames.StarsAbove.FriendlySpaceBiome: Pyxis
