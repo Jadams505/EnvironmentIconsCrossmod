@@ -3,4 +3,4 @@ author = Jadams
 version = 0.1
 side = Client
 modReferences = EnvironmentIcons
-weakReferences = CalamityMod, CalValEX, Macrocosm, ThoriumMod, StarsAbove, Redemption, Origins
+weakReferences = CalamityMod, CalValEX, Macrocosm, ThoriumMod, StarsAbove, Redemption, Origins, SpiritReforged

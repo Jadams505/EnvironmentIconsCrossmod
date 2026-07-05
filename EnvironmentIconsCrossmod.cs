@@ -13,12 +13,15 @@ namespace EnvironmentIconsCrossmod
 	{
 		private static EnvironmentIconsCrossmod _instance;
 		public static EnvironmentIconsCrossmod Instance => _instance ??= ModContent.GetInstance<EnvironmentIconsCrossmod>();
-		public int MissingBiomes { get; private set; } = 0;
+		public int MissingContent { get; private set; } = 0;
 
-		public static void LogMissingBiome(string modName, string modBiome, string disabledContent)
+		public static void LogMissingBiome(string modName, string modBiome, string disabledContent) =>
+			LogMissingContent<ModBiome>(modName, modBiome, disabledContent);
+
+		public static void LogMissingContent<T>(string modName, string content, string disabledContent)
 		{
-			Instance.MissingBiomes++;
-			Instance.Logger.Error($"The ModBiome: {modBiome} added by {modName} could not be found. Loading for {disabledContent} has been disabled. Most likely {modName} had a recent update and may have removed or deleted {modBiome}. Please report this message to '{Instance.DisplayNameClean}'.");
+			Instance.MissingContent++;
+			Instance.Logger.Error($"The {typeof(T).Name}: {content} added by {modName} could not be found. Loading for {disabledContent} has been disabled. Most likely {modName} had a recent update and may have removed or deleted {content}. Please report this message to '{Instance.DisplayNameClean}'.");
 		}
 	}
 }

@@ -26,6 +26,9 @@
 	  <Reference Include="Redemption">
 	    <HintPath>..\ModAssemblies\Redemption_v0.8.0.4200.dll</HintPath>
 	  </Reference>
+	  <Reference Include="SpiritReforged">
+	    <HintPath>..\ModAssemblies\SpiritReforged_v0.2.1.1.dll</HintPath>
+	  </Reference>
 	  <Reference Include="StarsAbove">
 	    <HintPath>..\ModAssemblies\StarsAbove_v2.1.8.4.dll</HintPath>
 	  </Reference>

@@ -84,6 +84,16 @@ Conditions: {
 		Riven_Hive_Ice_Biome: In a Riven Hive Ice biome
 		Riven_Hive_Ocean: In an Eutrophic Sea biome
 	}
+
+	SpiritReforged: {
+		SaltBiome: In a Salt Flats biome
+		SavannaBiome: In a Savanna biome
+		ZigguratBiome: In a Ziggurat structure
+		Duststorm: During a Duststorm
+	}
 }
 
-DisplayNames.StarsAbove.FriendlySpaceBiome: Pyxis
+DisplayNames: {
+	StarsAbove.FriendlySpaceBiome: Pyxis
+	SpiritReforged.Duststorm: Duststorm
+}
