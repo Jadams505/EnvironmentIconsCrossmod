@@ -66,6 +66,24 @@ Conditions: {
 		WastelandPurityBiome: In a Wasteland biome
 		WastelandSnowBiome: In a Snow Wasteland biome
 	}
+
+	Origins: {
+		Brine_Pool: In a Brine Pool biome
+		Defiled_Wastelands: In a Defiled Wastelands biome
+		Underground_Defiled_Wastelands_Biome: In an Underground Defiled Wastelands biome
+		Defiled_Wastelands_Desert: In an Defiled Wastelands Desert biome
+		Defiled_Wastelands_Underground_Desert: In an Underground Defiled Wastelands Desert biome
+		Defiled_Wastelands_Ice_Biome: In a Defiled Wastelands Ice biome
+		Defiled_Wastelands_Ocean: In a Defiled Wastelands Ocean biome
+		Fiberglass_Undergrowth: In a Fiberglass Undergrowth biome
+		Limestone_Cave: In a Limestone Cave biome
+		Riven_Hive: In a Riven Hive biome
+		Underground_Riven_Hive_Biome: In an Underground Riven Hive biome
+		Riven_Hive_Desert: In a Riven Hive Desert biome
+		Riven_Hive_Underground_Desert: In a Underground Riven Hive Desert biome
+		Riven_Hive_Ice_Biome: In a Riven Hive Ice biome
+		Riven_Hive_Ocean: In an Eutrophic Sea biome
+	}
 }
 
 DisplayNames.StarsAbove.FriendlySpaceBiome: Pyxis

@@ -20,6 +20,9 @@
 	  <Reference Include="Macrocosm">
 	    <HintPath>..\ModAssemblies\Macrocosm_v0.1.1.2.dll</HintPath>
 	  </Reference>
+	  <Reference Include="Origins">
+	    <HintPath>..\ModAssemblies\Origins_v0.5.3.21.dll</HintPath>
+	  </Reference>
 	  <Reference Include="Redemption">
 	    <HintPath>..\ModAssemblies\Redemption_v0.8.0.4200.dll</HintPath>
 	  </Reference>
