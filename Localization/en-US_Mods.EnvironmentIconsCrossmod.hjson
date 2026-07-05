@@ -41,4 +41,19 @@ Conditions: {
 		GraniteBiome: In a Thorium Granite biome
 		MarbleBiome: In a Thorium Marble biome
 	}
+
+	StarsAbove: {
+		BleachedWorldBiome: In a Bleached World subworld
+		CorvusBiome: In a Corvus subworld
+		DreamingCityBiome: In a Dreaming City subworld
+		FriendlySpaceBiome: In a Pyxis subworld
+		LyraBiome: In a Lyra subworld
+		MoonBiome: When inflicted with the Moon Turnoil effect
+		NeonVeilBiome: In a Neon Veil biome
+		ObservatoryBiome: In a Observatory subworld
+		OtherworldBiome: In a Otherworld subworld
+		SeaOfStarsBiome: In a Sea of Stars subworld
+	}
 }
+
+DisplayNames.StarsAbove.FriendlySpaceBiome: Pyxis
