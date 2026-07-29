@@ -1,1 +1,13 @@
-Modify this file with a description of your mod.
+Environment Icons Crossmod adds compatibility between Environment Icons and many popular Terraria mods.
+
+Currently supported mods:
+* Calamity
+* Calamity Vanities
+* Mod of Redemption
+* Macrocosm
+* Terraria Origins
+* Spirit Reforged
+* Stars Above
+* Thorium
+
+Note that compatibility is loaded automatically for whichever supported mods are installed.
