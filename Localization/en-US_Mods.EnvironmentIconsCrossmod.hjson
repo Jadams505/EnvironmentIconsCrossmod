@@ -91,6 +91,15 @@ Conditions: {
 		ZigguratBiome: In a Ziggurat structure
 		Duststorm: During a Duststorm
 	}
+
+	SOTS: {
+		AbandonedVillageBiome: In an Abandoned Village structure
+		AnomalyBiome: In an Anamaly biome
+		PhaseBiome: In a Phase Ore biome
+		PlanetariumBiome: In a Plantearium structure
+		PyramidBiome: In a Cursed Pyramid structure
+		SanctuaryBiome: In a Sanctuary structure
+	}
 }
 
 DisplayNames: {
