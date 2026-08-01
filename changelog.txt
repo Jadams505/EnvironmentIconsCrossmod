@@ -2,4 +2,7 @@
 Environment Icons v{ModVersion} has been published to {tMLBuildPurpose} tML v{tMLVersion}.
 Learn more at the [url={ModHomepage}]homepage[/url]
 
-- Initial Release
+- Support added for:
+[*] Secrets of the Shadows
+[*] Ancient Awakened: Classic
+[*] Ancients Awakened [BETA]

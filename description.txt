@@ -9,5 +9,8 @@ Currently supported mods:
 * Spirit Reforged
 * Stars Above
 * Thorium
+* Secrets of the Shadows
+* Ancient Awakened: Classic
+* Ancients Awakened [BETA]
 
 Note that compatibility is loaded automatically for whichever supported mods are installed.
