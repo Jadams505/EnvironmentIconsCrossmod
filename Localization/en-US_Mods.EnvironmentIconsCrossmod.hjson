@@ -100,6 +100,22 @@ Conditions: {
 		PyramidBiome: In a Cursed Pyramid structure
 		SanctuaryBiome: In a Sanctuary structure
 	}
+
+	AAModClassic: {
+		AcropolisBiome: In an Acropolis structure
+		HoardBiome: In a Hoard biome
+		InfernoBiome: In a Inferno biome
+		RisingSunPagodaBiome: In a Rising Sun Pagoda structure
+		MireBiome: In a Mire biome
+		RisingMoonLakeBiome: In a Rising Moon Lake biome
+		RedMushroomBiome: In a Red Mushroom biome
+		StarsBiome: In a Celestial Stars structure
+		TerrariumBiome: In a Terrarium structure
+		VoidBiome: In a Void biome
+		LostKeepBiome: In a Lost Keep structure
+		ParthenanBiome: In a Partnenan structure
+		SunkenShipBiome: In a Sunken Ship structure
+	}
 }
 
 DisplayNames: {
