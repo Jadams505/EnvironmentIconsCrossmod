@@ -11,6 +11,9 @@
 	  <Reference Include="AAModClassic">
 	    <HintPath>..\ModAssemblies\AAModClassic_v1.0.17.dll</HintPath>
 	  </Reference>
+	  <Reference Include="AAMod">
+	    <HintPath>..\ModAssemblies\AAMod_v0.1.5.1.dll</HintPath>
+	  </Reference>
 	  <Reference Include="CalamityMod">
 	    <HintPath>..\ModAssemblies\CalamityMod_v2.2.1.dll</HintPath>
 	  </Reference>

@@ -116,6 +116,17 @@ Conditions: {
 		ParthenanBiome: In a Partnenan structure
 		SunkenShipBiome: In a Sunken Ship structure
 	}
+
+	AAMod: {
+		InfernoSurfaceBiome: In a Surface Inferno biome
+		InfernoUndergroundBiome: In an Underground Inferno biome
+		MourningSunBiome: During a Mourning Sun
+		DreadMoonBiome: During a Dread Moon
+		MireSurfaceBiome: In a Mire Surface biome
+		MireUndergroundBiome: In an Underground Mire biome
+		MushblightBiome: In a Mushroom Blight biome
+		MushblightSurfaceBiome: In a Mushroom Blight Surface biome
+	}
 }
 
 DisplayNames: {
