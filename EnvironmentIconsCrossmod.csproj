@@ -41,6 +41,9 @@
 	  <Reference Include="StarsAbove">
 	    <HintPath>..\ModAssemblies\StarsAbove_v2.1.8.4.dll</HintPath>
 	  </Reference>
+	  <Reference Include="TheConfectionRebirth">
+	    <HintPath>..\ModAssemblies\TheConfectionRebirth_v0.30.2.dll</HintPath>
+	  </Reference>
 	  <Reference Include="TheDepths">
 	    <HintPath>..\ModAssemblies\TheDepths_v1.0.5.7.dll</HintPath>
 	  </Reference>

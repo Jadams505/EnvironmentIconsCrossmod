@@ -4,5 +4,5 @@ version = 1.1.0
 side = Client
 homepage = https://github.com/Jadams505/EnvironmentIconsCrossmod
 modReferences = EnvironmentIcons
-weakReferences = CalamityMod, CalValEX, Macrocosm, ThoriumMod, StarsAbove, Redemption, Origins, SpiritReforged, SOTS, AAModClassic, AAMod, TheDepths
+weakReferences = CalamityMod, CalValEX, Macrocosm, ThoriumMod, StarsAbove, Redemption, Origins, SpiritReforged, SOTS, AAModClassic, AAMod, TheDepths, TheConfectionRebirth
 buildIgnore = *.xcf

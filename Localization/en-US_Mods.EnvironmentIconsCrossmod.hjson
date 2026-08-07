@@ -129,9 +129,21 @@ Conditions: {
 	}
 
 	TheDepths.DepthsBiome: In a Depths biome
+
+	TheConfectionRebirth: {
+		ConfectionBiome: In a Confection biome
+		IceConfectionSurfaceBiome: In a Confection Ice biome
+		IceConfectionUndergroundBiome: In an Underground Confection Ice biome
+		SandConfectionSurfaceBiome: In a Confection Desert biome
+		SandConfectionUndergroundBiome: In an Underground Confection Desert biome
+		ConfectionUndergroundBiome: In an Underground Confection biome
+	}
 }
 
 DisplayNames: {
 	StarsAbove.FriendlySpaceBiome: Pyxis
 	SpiritReforged.Duststorm: Duststorm
+	TheConfectionRebirth: {
+		IceConfectionSurfaceBiome: Confection Snow
+	}
 }
