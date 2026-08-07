@@ -138,12 +138,12 @@ Conditions: {
 		SandConfectionUndergroundBiome: In an Underground Confection Desert biome
 		ConfectionUndergroundBiome: In an Underground Confection biome
 	}
+
+	Arbour.ArborBiome: In an Arbour biome
 }
 
 DisplayNames: {
 	StarsAbove.FriendlySpaceBiome: Pyxis
 	SpiritReforged.Duststorm: Duststorm
-	TheConfectionRebirth: {
-		IceConfectionSurfaceBiome: Confection Snow
-	}
+	TheConfectionRebirth.IceConfectionSurfaceBiome: Confection Snow
 }

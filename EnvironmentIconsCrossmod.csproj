@@ -14,6 +14,9 @@
 	  <Reference Include="AAMod">
 	    <HintPath>..\ModAssemblies\AAMod_v0.1.5.1.dll</HintPath>
 	  </Reference>
+	  <Reference Include="Arbour">
+	    <HintPath>..\ModAssemblies\Arbour_v1.2.2.9.dll</HintPath>
+	  </Reference>
 	  <Reference Include="CalamityMod">
 	    <HintPath>..\ModAssemblies\CalamityMod_v2.2.1.dll</HintPath>
 	  </Reference>
