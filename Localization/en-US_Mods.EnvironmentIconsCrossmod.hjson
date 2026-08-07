@@ -140,6 +140,11 @@ Conditions: {
 	}
 
 	Arbour.ArborBiome: In an Arbour biome
+
+	Verdant: {
+		VerdantBiome: In a Verdant biome
+		VerdantUndergroundBiome: In an Underground Verdant biome
+	}
 }
 
 DisplayNames: {

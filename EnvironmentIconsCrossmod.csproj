@@ -53,6 +53,9 @@
 	  <Reference Include="ThoriumMod">
 	    <HintPath>..\ModAssemblies\ThoriumMod_v1.7.2.6.dll</HintPath>
 	  </Reference>
+	  <Reference Include="Verdant">
+	    <HintPath>..\ModAssemblies\Verdant_v1.3.1.dll</HintPath>
+	  </Reference>
 	</ItemGroup>
 
 	<!-- References -->
