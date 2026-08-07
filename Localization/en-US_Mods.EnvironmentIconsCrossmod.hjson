@@ -127,6 +127,8 @@ Conditions: {
 		MushblightBiome: In a Mushroom Blight biome
 		MushblightSurfaceBiome: In a Mushroom Blight Surface biome
 	}
+
+	TheDepths.DepthsBiome: In a Depths biome
 }
 
 DisplayNames: {
