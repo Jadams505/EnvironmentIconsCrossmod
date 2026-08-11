@@ -12,5 +12,9 @@ Currently supported mods:
 * Secrets of the Shadows
 * Ancient Awakened: Classic
 * Ancients Awakened [BETA]
+* Verdant
+* The Depths
+* Arbour
+* The Confection REBAKED
 
 Note that compatibility is loaded automatically for whichever supported mods are installed.

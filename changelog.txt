@@ -2,7 +2,8 @@
 Environment Icons v{ModVersion} has been published to {tMLBuildPurpose} tML v{tMLVersion}.
 Learn more at the [url={ModHomepage}]homepage[/url]
 
-- Support added for:
-[*] Secrets of the Shadows
-[*] Ancient Awakened: Classic
-[*] Ancients Awakened [BETA]
+Support added for:
+- Verdant
+- The Depths
+- Arbour
+- The Confection REBAKED

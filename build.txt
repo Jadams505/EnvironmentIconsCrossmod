@@ -1,6 +1,6 @@
 displayName = Environment Icons Crossmod Addon
 author = Jadams
-version = 1.1.0
+version = 1.2.0
 side = Client
 homepage = https://github.com/Jadams505/EnvironmentIconsCrossmod
 modReferences = EnvironmentIcons
